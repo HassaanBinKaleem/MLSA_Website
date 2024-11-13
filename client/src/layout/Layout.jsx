@@ -1,13 +1,13 @@
-import BasicExample from "../components/BasicExample";
+import ContentSection from "../components/ContentSection";
+import Navbar from "../components/Navbar";
 
 const Layout = () => {
-  return (
-    <>
-      <div>
-        <BasicExample />
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <ContentSection />
+        </>
+    );
 };
 
 export default Layout;
