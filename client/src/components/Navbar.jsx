@@ -12,7 +12,7 @@ const CustomNavbar = () => {
             <Container fluid>
                 <Navbar.Brand href="#" className="me-3">
                     <img
-                        src="logo.jpeg"
+                        src="src/assets/logo.jpeg"
                         alt="Logo"
                         width="70"
                         height="70"

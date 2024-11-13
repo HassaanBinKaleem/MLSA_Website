@@ -74,10 +74,14 @@ p {
     font-family: var(--font-heading);
     font-size: 2rem !important;
     color: var(--color-text-on-primary) !important;
+    transition: all 0.3s ease !important;
 }
 
 .navbar-brand img {
     border-radius: 1rem;
+}
+.navbar-brand:hover{
+    opacity: 0.9 !important;
 }
 
 .bi {
@@ -158,36 +162,7 @@ p {
     color: var(--color-secondary) !important;
 }
 
-/* Small and Medium Screens Only*/
-@media (max-width: 992px) {
-    .navbar-collapse {
-        padding-top: 1.2rem !important;
-        max-height: 70vh;
-        overflow-y: auto;
-    }
-
-    .navbar-brand img {
-        height: var(--navbar-img-size);
-        width: var(--navbar-img-size);
-    }
-    .main-header-text {
-        font-size: 2.5rem !important;
-    }
-}
-/* Large Screens Only*/
-@media (min-width: 992px) {
-    .nav-link:hover,
-    .btn-custom:hover {
-        transform: scale(1.3) !important;
-        margin-left: 1.3rem !important;
-        margin-right: 1.3rem !important;
-    }
-    .main-header-text {
-        font-size: 4rem !important;
-    }
-}
-
-/* Additional Content Section Styling */
+/* Hero Section Styling */
 .main-header-text {
     font-family: var(--font-heading);
     color: var(--color-text-on-primary) !important;
@@ -248,4 +223,35 @@ p {
     color: var(--button-text-primary) !important;
     background-color: var(--button-text-hover) !important;
     border: 2px solid var(--button-text-hover) !important;
+}
+
+/* Events Section Styling */
+
+/* Small and Medium Screens Only*/
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding-top: 1.2rem !important;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .navbar-brand img {
+        height: var(--navbar-img-size);
+        width: var(--navbar-img-size);
+    }
+    .main-header-text {
+        font-size: 2.5rem !important;
+    }
+}
+/* Large Screens Only*/
+@media (min-width: 992px) {
+    .nav-link:hover,
+    .btn-custom:hover {
+        transform: scale(1.3) !important;
+        margin-left: 1.3rem !important;
+        margin-right: 1.3rem !important;
+    }
+    .main-header-text {
+        font-size: 4rem !important;
+    }
 }
