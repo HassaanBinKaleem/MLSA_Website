@@ -205,16 +205,16 @@ p {
     text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
 }
 .btn-hero-section {
-    padding: 0rem 10rem !important;
+    padding: 0rem 0rem !important;
+    width: 70% !important;
 }
 .btn-hero {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     font-family: var(--font-heading) !important;
-    font-size: 1.75rem !important;
+    font-size: 1.65rem !important;
     height: 5rem !important;
-    width: 100% !important;
     color: var(--button-text-primary) !important;
 }
 .btn-primary {

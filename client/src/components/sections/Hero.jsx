@@ -25,7 +25,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row text-center mt-3 btn-hero-section">
+                <div className="row text-center mt-3 btn-hero-section d-flex justify-content-center mx-auto">
                     <div className="col-12 col-md-6 mb-3 mb-md-0">
                         <a href="#team" className="btn btn-hero btn-primary w-100">
                             Our Team
