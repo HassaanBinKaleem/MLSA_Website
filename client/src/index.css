@@ -5,50 +5,50 @@
 
 /* Root Variables */
 :root {
-    /* Font Variables */
-    --font-heading: "Besley", serif;
-    --font-body: "Raleway", sans-serif;
+  /* Font Variables */
+  --font-heading: "Besley", serif;
+  --font-body: "Raleway", sans-serif;
 
-    /* Primary Colors */
-    --color-primary: #0d6efd;
-    --color-secondary: #e69500;
-    --color-text-on-primary: #fff;
-    --color-text-on-secondary: #000;
+  /* Primary Colors */
+  --color-primary: #0d6efd;
+  --color-secondary: #e69500;
+  --color-text-on-primary: #fff;
+  --color-text-on-secondary: #000;
 
-    /* Button Colors */
-    --button-bg-primary: #073d8f;
-    --button-text-primary: #ffffff;
-    --button-bg-hover: #ffffff;
-    --button-text-hover: #000000;
+  /* Button Colors */
+  --button-bg-primary: #073d8f;
+  --button-text-primary: #ffffff;
+  --button-bg-hover: #ffffff;
+  --button-text-hover: #000000;
 
-    /* Shadows */
-    --shadow-primary: 4px 4px 20px rgba(0, 123, 255, 0.5);
-    --shadow-secondary: 4px 8px 12px rgba(255, 149, 0, 0.5);
-    --shadow-tertiary: 4px 8px 12px rgba(53, 53, 53, 0.5);
+  /* Shadows */
+  --shadow-primary: 4px 4px 20px rgba(0, 123, 255, 0.5);
+  --shadow-secondary: 4px 8px 12px rgba(255, 149, 0, 0.5);
+  --shadow-tertiary: 4px 8px 12px rgba(53, 53, 53, 0.5);
 
-    /* Sizes */
-    --radius-default: 1.1rem;
-    --navbar-img-size: 150px;
+  /* Sizes */
+  --radius-default: 1.1rem;
+  --navbar-img-size: 150px;
 }
 
 /* Body Styling */
 body {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: radial-gradient(
-        circle,
-        rgba(255, 149, 0, 1) 0%,
-        rgba(0, 123, 255, 1) 35%,
-        rgba(0, 123, 255, 1) 100%
-    );
-    overflow: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: radial-gradient(
+    circle,
+    rgba(255, 149, 0, 1) 0%,
+    rgba(0, 123, 255, 1) 35%,
+    rgba(0, 123, 255, 1) 100%
+  );
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
 }
 
 html::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 /* Typography */
@@ -58,200 +58,262 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-heading);
+  font-family: var(--font-heading);
 }
 
 p {
-    font-family: var(--font-body);
+  font-family: var(--font-body);
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
 }
 
 .navbar-brand {
-    font-family: var(--font-heading);
-    font-size: 2rem !important;
-    color: var(--color-text-on-primary) !important;
-    transition: all 0.3s ease !important;
+  font-family: var(--font-heading);
+  font-size: 2rem !important;
+  color: var(--color-text-on-primary) !important;
+  transition: all 0.3s ease !important;
 }
 
 .navbar-brand img {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
-.navbar-brand:hover{
-    opacity: 0.9 !important;
+.navbar-brand:hover {
+  opacity: 0.9 !important;
 }
 
 .bi {
-    font-size: 1rem !important;
-    padding-right: 0.4rem !important;
+  font-size: 1rem !important;
+  padding-right: 0.4rem !important;
 }
 
 /* Navbar Link and Button */
 .nav-link,
 .btn-custom {
-    font-family: var(--font-body) !important;
-    font-size: 1.05rem !important;
-    margin: 0.5rem 0.5rem !important;
-    padding: 0.4rem 0.7rem !important;
-    border-radius: var(--radius-default) !important;
-    transition: all 0.3s ease !important;
+  font-family: var(--font-body) !important;
+  font-size: 1.05rem !important;
+  margin: 0.5rem 0.5rem !important;
+  padding: 0.4rem 0.7rem !important;
+  border-radius: var(--radius-default) !important;
+  transition: all 0.3s ease !important;
 }
 
 /* Navbar Link */
 .nav-link {
-    color: var(--color-text-on-primary) !important;
-    background-color: var(--button-bg-primary) !important;
-    border: 1px solid var(--button-bg-primary) !important;
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--button-bg-primary) !important;
+  border: 1px solid var(--button-bg-primary) !important;
 }
 
 .nav-link:hover {
-    color: var(--button-text-hover) !important;
-    background-color: var(--button-bg-hover) !important;
-    border: 1px solid var(--button-bg-hover) !important;
-    box-shadow: var(--shadow-primary) !important;
-    border-top-left-radius: 0rem !important;
-    border-bottom-right-radius: 0rem !important;
+  color: var(--button-text-hover) !important;
+  background-color: var(--button-bg-hover) !important;
+  border: 1px solid var(--button-bg-hover) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border-top-left-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
 }
 
 .nav-link:focus {
-    outline: none;
-    box-shadow: 0 0 10px 4px var(--color-text-on-primary) !important;
-    border: 1px solid var(--color-text-on-primary) !important;
+  outline: none;
+  box-shadow: 0 0 10px 4px var(--color-text-on-primary) !important;
+  border: 1px solid var(--color-text-on-primary) !important;
 }
 
 .nav-link:active {
-    transform: scale(0.98);
-    transition: transform 0.1s ease !important;
-    box-shadow: 2px 2px 12px var(--button-text-hover) !important;
-    border: 1px solid var(--button-text-hover) !important;
-    background-color: var(--button-text-hover) !important;
-    color: var(--button-text-primary) !important;
+  transform: scale(0.98);
+  transition: transform 0.1s ease !important;
+  box-shadow: 2px 2px 12px var(--button-text-hover) !important;
+  border: 1px solid var(--button-text-hover) !important;
+  background-color: var(--button-text-hover) !important;
+  color: var(--button-text-primary) !important;
 }
 /* Button Primary */
 .btn-custom {
-    color: var(--color-text-on-secondary) !important;
-    background-color: var(--color-secondary) !important;
-    border: 1px solid var(--color-secondary) !important;
+  color: var(--color-text-on-secondary) !important;
+  background-color: var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary) !important;
 }
 .btn-custom {
-    color: var(--color-text-on-secondary) !important;
-    background-color: var(--color-secondary) !important;
-    border: 1px solid var(--color-secondary) !important;
-    display: inline-block !important;
-    position: relative !important;
+  color: var(--color-text-on-secondary) !important;
+  background-color: var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary) !important;
+  display: inline-block !important;
+  position: relative !important;
 }
 
 .btn-custom:hover {
-    border-top-left-radius: 0rem !important;
-    border-bottom-right-radius: 0rem !important;
-    box-shadow: var(--shadow-secondary) !important;
+  border-top-left-radius: 0rem !important;
+  border-bottom-right-radius: 0rem !important;
+  box-shadow: var(--shadow-secondary) !important;
 }
 
 .btn-custom:focus {
-    outline: none;
+  outline: none;
 }
 
 .btn-custom:active {
-    transform: scale(0.98);
-    box-shadow: 2px 2px 12px var(--color-secondary) !important;
-    border: 1px solid var(--color-secondary) !important;
-    background-color: var(--button-text-hover) !important;
-    color: var(--color-secondary) !important;
+  transform: scale(0.98);
+  box-shadow: 2px 2px 12px var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary) !important;
+  background-color: var(--button-text-hover) !important;
+  color: var(--color-secondary) !important;
 }
 
 /* Hero Section Styling */
 .main-header-text {
-    font-family: var(--font-heading);
-    color: var(--color-text-on-primary) !important;
-    text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
-    transition: all 0.3s ease !important;
+  font-family: var(--font-heading);
+  color: var(--color-text-on-primary) !important;
+  text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
+  transition: all 0.3s ease !important;
 }
 .helper-text {
-    font-family: var(--font-body);
-    font-size: 1.2rem !important;
-    text-align: center !important;
-    color: var(--color-text-on-primary) !important;
-    transition: all 0.3s ease !important;
+  font-family: var(--font-body);
+  font-size: 1.2rem !important;
+  text-align: center !important;
+  color: var(--color-text-on-primary) !important;
+  transition: all 0.3s ease !important;
 }
 .helper-text:hover {
-    text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
+  text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
 }
 .btn-hero-section {
-    padding: 0rem 0rem !important;
-    width: 70% !important;
+  padding: 0rem 0rem !important;
+  width: 60% !important;
 }
 .btn-hero {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-family: var(--font-heading) !important;
-    font-size: 1.65rem !important;
-    height: 5rem !important;
-    color: var(--button-text-primary) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: var(--font-heading) !important;
+  font-size: 1.5rem !important;
+  height: 4.5rem !important;
+  color: var(--button-text-primary) !important;
 }
 .btn-primary {
-    border: 2px solid var(--color-secondary) !important;
-    background-color: var(--color-secondary) !important;
-    transition: all 0.5s ease !important;
+  border: 2px solid var(--color-secondary) !important;
+  background-color: var(--color-secondary) !important;
+  transition: all 0.5s ease !important;
 }
 .btn-primary:hover {
-    color: var(--color-secondary) !important;
-    background-color: var(--button-text-hover) !important;
-    border: 2px solid var(--button-text-hover) !important;
-    box-shadow: var(--shadow-tertiary) !important;
+  color: var(--color-secondary) !important;
+  background-color: var(--button-text-hover) !important;
+  border: 2px solid var(--button-text-hover) !important;
+  box-shadow: var(--shadow-tertiary) !important;
 }
 .btn-primary:active {
-    color: var(--button-text-hover) !important;
-    background-color: var(--button-text-primary) !important;
-    border: 2px solid var(--button-text-primary) !important;
+  color: var(--button-text-hover) !important;
+  background-color: var(--button-text-primary) !important;
+  border: 2px solid var(--button-text-primary) !important;
 }
 .btn-secondary {
-    border: 2px solid var(--button-text-hover) !important;
-    background-color: var(--button-text-hover) !important;
-    transition: all 0.5s ease !important;
+  border: 2px solid var(--button-text-hover) !important;
+  background-color: var(--button-text-hover) !important;
+  transition: all 0.5s ease !important;
 }
 .btn-secondary:hover {
-    color: var(--button-text-hover) !important;
-    background-color: var(--button-text-primary) !important;
-    border: 2px solid var(--button-text-primary) !important;
-    box-shadow: var(--shadow-tertiary) !important;
+  color: var(--button-text-hover) !important;
+  background-color: var(--button-text-primary) !important;
+  border: 2px solid var(--button-text-primary) !important;
+  box-shadow: var(--shadow-tertiary) !important;
 }
 .btn-secondary:active {
-    color: var(--button-text-primary) !important;
-    background-color: var(--button-text-hover) !important;
-    border: 2px solid var(--button-text-hover) !important;
+  color: var(--button-text-primary) !important;
+  background-color: var(--button-text-hover) !important;
+  border: 2px solid var(--button-text-hover) !important;
 }
 
 /* Events Section Styling */
+.carousel-item {
+  padding: 0rem 10rem !important;
+}
+.content-section {
+  padding-bottom: 5rem !important;
+}
+.section-spacing {
+  padding: 5rem 0rem !important;
+}
+
+.custom-card {
+  cursor: pointer !important;
+  height: 350px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  padding: 0rem !important;
+  background-color: transparent !important;
+  border: 0px solid transparent !important;
+  border-radius: 1rem !important;
+  position: relative; /* Make the overlay align with the card */
+}
+
+.img-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Card overlay styling */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  color: var(--color-text-on-primary);
+  padding: 1rem 0.5rem 0rem 0.5rem !important;
+  text-align: center;
+  box-shadow: var(--shadow-primary) !important;
+  transform: translateY(100%); /* Start off-screen */
+  transition: transform 0.3s ease-in-out;
+}
+.card-overlay h2 {
+  font-family: var(--font-heading) !important;
+  font-size: 2rem !important;
+}
+/* Show overlay and zoom effect on hover */
+.custom-card:hover .card-overlay {
+  transform: translateY(0); /* Slide up into view */
+}
+
+.img-container:hover img {
+  transform: scale(1.1); /* Zoom effect */
+}
 
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
-    .navbar-collapse {
-        padding-top: 1.2rem !important;
-        max-height: 70vh;
-        overflow-y: auto;
-    }
+  .navbar-collapse {
+    padding-top: 1.2rem !important;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
 
-    .navbar-brand img {
-        height: var(--navbar-img-size);
-        width: var(--navbar-img-size);
-    }
-    .main-header-text {
-        font-size: 2.5rem !important;
-    }
+  .navbar-brand img {
+    height: var(--navbar-img-size);
+    width: var(--navbar-img-size);
+  }
+  .main-header-text {
+    font-size: 2.5rem !important;
+  }
 }
 /* Large Screens Only*/
 @media (min-width: 992px) {
-    .nav-link:hover,
-    .btn-custom:hover {
-        transform: scale(1.3) !important;
-        margin-left: 1.3rem !important;
-        margin-right: 1.3rem !important;
-    }
-    .main-header-text {
-        font-size: 4rem !important;
-    }
+  .nav-link:hover,
+  .btn-custom:hover {
+    transform: scale(1.3) !important;
+    margin-left: 1.3rem !important;
+    margin-right: 1.3rem !important;
+  }
+  .main-header-text {
+    font-size: 4rem !important;
+  }
 }

@@ -5,10 +5,10 @@ const Events = () => {
   return (
     <section
       id="events"
-      className="d-flex justify-content-center align-items-center"
+      className="text-center section-spacing"
       style={{ height: "80vh" }}
     >
-      <h1 className="main-header-text">Events Section</h1>
+      <h1 className="main-header-text mb-4">Events</h1>
       <LargeCarousel />
     </section>
   );

@@ -1,30 +1,108 @@
-import Carousel from "react-bootstrap/Carousel";
+import React from "react";
+import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
 
-function LargeCarousel() {
+const LargeCarousel = () => {
   return (
-    <div>
-      <Carousel fade>
-        <Carousel.Item>
-          <CardItem src="src/assets/events/meetup/Meetup01a.png" alt="First slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+    <Carousel id="carouselLarge" interval={3000} indicators={false} controls>
+      <Carousel.Item>
+        <Container>
+          <Row>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/1.png"
+                    alt="Event01"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 01 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/2.png"
+                    alt="Event02"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 02 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/3.png"
+                    alt="Event03"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 03 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <Container>
+          <Row>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/1.png"
+                    alt="Event01"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 01 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/2.png"
+                    alt="Event02"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 02 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+            <Col lg={4}>
+              <Card className="custom-card">
+                <div className="img-container">
+                  <Card.Img
+                    src="src/assets/events/meetup/3.png"
+                    alt="Event03"
+                  />
+                  <div className="card-overlay">
+                    <h2>Event 03 Name</h2>
+                    <p>Some description about the Event</p>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Carousel.Item>
+    </Carousel>
   );
-}
-import CardItem from "./CardItem";
+};
 
 export default LargeCarousel;
