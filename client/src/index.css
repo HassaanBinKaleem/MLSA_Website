@@ -28,7 +28,7 @@
 
   /* Sizes */
   --radius-default: 1.1rem;
-  --navbar-img-size: 150px;
+  --navbar-img-size: 100px;
 }
 
 /* Body Styling */
@@ -161,6 +161,16 @@ p {
   background-color: var(--button-text-hover) !important;
   color: var(--color-secondary) !important;
 }
+.nav-link:hover,
+.btn-custom:hover {
+  transform: scale(1.3) !important;
+  margin-left: 1.3rem !important;
+  margin-right: 1.3rem !important;
+}
+
+.main-header-text {
+  font-size: 4rem !important;
+}
 
 /* Hero Section Styling */
 .main-header-text {
@@ -226,6 +236,9 @@ p {
 }
 
 /* Events Section Styling */
+.events-carousel {
+  border-radius: 1rem !important;
+}
 .carousel-item {
   padding: 0rem 10rem !important;
 }
@@ -288,7 +301,10 @@ p {
 .img-container:hover img {
   transform: scale(1.1); /* Zoom effect */
 }
-
+#MediumCarousel,
+#SmallCarousel {
+  display: none;
+}
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
   .navbar-collapse {
@@ -302,18 +318,34 @@ p {
     width: var(--navbar-img-size);
   }
   .main-header-text {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
 }
-/* Large Screens Only*/
-@media (min-width: 992px) {
-  .nav-link:hover,
-  .btn-custom:hover {
-    transform: scale(1.3) !important;
-    margin-left: 1.3rem !important;
-    margin-right: 1.3rem !important;
+/* Events Carousel Responsivness */
+@media (max-width: 1200px) {
+  #LargeCarousel {
+    display: none;
   }
-  .main-header-text {
-    font-size: 4rem !important;
+  #MediumCarousel {
+    display: block;
+  }
+  #SmallCarousel {
+    display: none;
+  }
+  .carousel-item {
+    padding: 0rem 6rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #LargeCarousel,
+  #MediumCarousel {
+    display: none;
+  }
+  #SmallCarousel {
+    display: block;
+  }
+  .carousel-item {
+    padding: 0rem 2rem !important;
   }
 }

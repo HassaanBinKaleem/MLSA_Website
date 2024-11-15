@@ -1,5 +1,7 @@
 import React from "react";
 import LargeCarousel from "./eventcarousel/LargeCarousel";
+import MediumCarousel from "./eventcarousel/MediumCarousel";
+import SmallCarousel from "./eventcarousel/SmallCarousel";
 
 const Events = () => {
   return (
@@ -9,7 +11,17 @@ const Events = () => {
       style={{ height: "80vh" }}
     >
       <h1 className="main-header-text mb-4">Events</h1>
-      <LargeCarousel />
+      <div className="events-carousel">
+        <div id="LargeCarousel">
+          <LargeCarousel />
+        </div>
+        <div id="MediumCarousel">
+          <MediumCarousel />
+        </div>
+        <div id="SmallCarousel">
+          <SmallCarousel />
+        </div>
+      </div>
     </section>
   );
 };

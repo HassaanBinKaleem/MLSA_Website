@@ -5,7 +5,6 @@ const Hero = () => {
         <section
             id="hero"
             className="d-flex justify-content-center align-items-center text-center"
-            // style="height: 80vh;"
             style={{ height: "80vh" }}
         >
             <div className="container px-4">
