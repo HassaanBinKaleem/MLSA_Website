@@ -135,11 +135,6 @@ p {
   color: var(--color-text-on-secondary) !important;
   background-color: var(--color-secondary) !important;
   border: 1px solid var(--color-secondary) !important;
-}
-.btn-custom {
-  color: var(--color-text-on-secondary) !important;
-  background-color: var(--color-secondary) !important;
-  border: 1px solid var(--color-secondary) !important;
   display: inline-block !important;
   position: relative !important;
 }
@@ -152,28 +147,27 @@ p {
 
 .btn-custom:focus {
   outline: none;
+  box-shadow: 0 0 10px 4px var(--color-secondary) !important;
+  border: 1px solid var(--color-secondary) !important;
 }
 
 .btn-custom:active {
-  transform: scale(0.98);
+  transform: scale(0.98) !important;
   box-shadow: 2px 2px 12px var(--color-secondary) !important;
   border: 1px solid var(--color-secondary) !important;
-  background-color: var(--button-text-hover) !important;
-  color: var(--color-secondary) !important;
+  background-color: var(--color-secondary) !important;
+  color: var(--button-text-hover) !important;
 }
 .nav-link:hover,
 .btn-custom:hover {
-  transform: scale(1.3) !important;
+  transform: scale(1.15) !important;
   margin-left: 1.3rem !important;
   margin-right: 1.3rem !important;
 }
 
-.main-header-text {
-  font-size: 4rem !important;
-}
-
 /* Hero Section Styling */
 .main-header-text {
+  font-size: 4rem !important;
   font-family: var(--font-heading);
   color: var(--color-text-on-primary) !important;
   text-shadow: 4px 8px 8px rgba(53, 53, 53, 0.5) !important;
@@ -234,16 +228,16 @@ p {
   background-color: var(--button-text-hover) !important;
   border: 2px solid var(--button-text-hover) !important;
 }
+.content-section {
+  padding-bottom: 5rem !important;
+}
 
 /* Events Section Styling */
 .events-carousel {
   border-radius: 1rem !important;
 }
 .carousel-item {
-  padding: 0rem 10rem !important;
-}
-.content-section {
-  padding-bottom: 5rem !important;
+  padding: 0rem 0rem !important;
 }
 .section-spacing {
   padding: 5rem 0rem !important;
@@ -301,9 +295,64 @@ p {
 .img-container:hover img {
   transform: scale(1.1); /* Zoom effect */
 }
-#MediumCarousel,
-#SmallCarousel {
-  display: none;
+
+/* About Us Section */
+.subtitle-text {
+  font-family: var(--font-body) !important;
+  color: var(--color-text-on-primary) !important;
+  font-size: 1.2rem !important;
+  padding: 0rem !important;
+}
+.slogan-text {
+  font-family: var(--font-body) !important;
+  color: var(--color-text-on-primary) !important;
+  font-size: 1.2rem !important;
+}
+.aboutus-content-card {
+  width: 100% !important;
+  height: 20rem !important;
+  cursor: pointer !important;
+  background-color: var(--color-text-on-secondary) !important;
+  color: var(--color-text-on-primary) !important;
+  text-align: start !important;
+  transition: all 0.5s ease !important;
+}
+.aboutus-content-card:hover {
+  background-color: var(--color-text-on-primary) !important;
+  color: var(--color-text-on-secondary) !important;
+  box-shadow: var(--shadow-tertiary) !important;
+  transform: translateY(-10px) !important;
+}
+.aboutus-metric-card {
+  cursor: pointer !important;
+  background-color: var(--color-text-on-secondary) !important;
+  color: var(--color-text-on-primary) !important;
+  text-align: start !important;
+  transition: all 0.5s ease !important;
+}
+.aboutus-metric-card h1 {
+  font-family: var(--font-heading) !important;
+  font-size: 4rem !important;
+  color: var(--color-secondary) !important;
+}
+.aboutus-metric-card .icon {
+  text-align: end !important;
+  color: var(--color-secondary) !important;
+  font-size: 1rem !important;
+  transition: all 0.5s ease !important;
+}
+.aboutus-metric-card span {
+  font-family: var(--font-body) !important;
+  font-size: 1.2rem !important;
+}
+.aboutus-metric-card:hover {
+  background-color: var(--color-text-on-primary) !important;
+  color: var(--color-text-on-secondary) !important;
+  box-shadow: var(--shadow-tertiary) !important;
+  transform: translateY(-10px) !important;
+}
+.aboutus-metric-card:hover .icon{
+  color: var(--color-text-on-secondary) !important;
 }
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
@@ -319,33 +368,5 @@ p {
   }
   .main-header-text {
     font-size: 2rem !important;
-  }
-}
-/* Events Carousel Responsivness */
-@media (max-width: 1200px) {
-  #LargeCarousel {
-    display: none;
-  }
-  #MediumCarousel {
-    display: block;
-  }
-  #SmallCarousel {
-    display: none;
-  }
-  .carousel-item {
-    padding: 0rem 6rem !important;
-  }
-}
-
-@media (max-width: 768px) {
-  #LargeCarousel,
-  #MediumCarousel {
-    display: none;
-  }
-  #SmallCarousel {
-    display: block;
-  }
-  .carousel-item {
-    padding: 0rem 2rem !important;
   }
 }
