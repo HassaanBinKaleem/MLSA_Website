@@ -351,9 +351,79 @@ p {
   box-shadow: var(--shadow-tertiary) !important;
   transform: translateY(-10px) !important;
 }
-.aboutus-metric-card:hover .icon{
+.aboutus-metric-card:hover .icon {
   color: var(--color-text-on-secondary) !important;
 }
+
+/* Team Section */
+.team-content-card {
+  cursor: pointer !important;
+  background-color: var(--color-text-on-secondary) !important;
+  color: var(--color-text-on-primary) !important;
+  text-align: start !important;
+  transition: all 0.5s ease !important;
+}
+.team-content-card:hover {
+  background-color: var(--color-text-on-primary) !important;
+  color: var(--color-text-on-secondary) !important;
+  box-shadow: var(--shadow-tertiary) !important;
+  transform: translateY(-10px) !important;
+}
+.team-content-card:hover h1 {
+  color: var(--color-secondary) !important;
+}
+
+/* Plan of Action Section */
+/* HTML: <div class="chevron"></div> */
+.chevron-start {
+  --s: 250px; /* control the shape (can be percentage) */
+
+  height: 220px;
+  width: 100%; /* Increased width */
+  aspect-ratio: 3/5;
+  clip-path: polygon(
+    0 0,
+    var(--s) 0,
+    100% 50%,
+    var(--s) 100%,
+    0 100%,
+    calc(0% - var(--s)) 50%
+  );
+  background: var(--button-bg-hover);
+}
+.chevron-mid {
+  --s: 250px; /* control the shape (can be percentage) */
+
+  height: 220px;
+  width: 100%; /* Increased width */
+  aspect-ratio: 3/5;
+  clip-path: polygon(
+    0 0,
+    var(--s) 0,
+    100% 50%,
+    var(--s) 100%,
+    0 100%,
+    calc(100% - var(--s)) 50%
+  );
+  background: var(--button-bg-hover);
+}
+.chevron-end {
+  --s: 250px; /* Controls the depth of the cavity */
+
+  height: 220px;
+  width: 100%; /* Increased width */
+  aspect-ratio: 3/5;
+  clip-path: polygon(
+    100% 0,
+    /* Start from the top-right corner */ calc(100% - var(--s)) 0,
+    /* Inward curve at the top (left side) */ 0 50%,
+    /* Inward middle (left side) */ calc(100% - var(--s)) 100%,
+    /* Inward curve at the bottom (left side) */ 100% 100%,
+    /* Bottom-right corner */ 100% 0 /* Top-right corner */
+  );
+  background: var(--button-bg-hover);
+}
+
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
   .navbar-collapse {
