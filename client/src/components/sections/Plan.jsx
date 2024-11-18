@@ -2,7 +2,7 @@ import React from "react";
 
 const Plan = () => {
   return (
-    <section id="team" className="text-center section-spacing">
+    <section id="plan" className="text-center section-spacing">
       <div className="container px-4">
         <p className="subtitle-text">How It Works</p>
         <h1 className="main-header-text mb-4">Plan of Action</h1>
@@ -12,16 +12,24 @@ const Plan = () => {
         </p>
         <div className="row">
           <div className="col">
-            <div className="chevron-start"></div>
+            <div className="chevron-start d-flex justify-content-center align-items-center text-center pe-4">
+              Some Text
+            </div>
           </div>
           <div className="col">
-            <div className="chevron-mid"></div>
+            <div className="chevron-mid d-flex justify-content-center align-items-center text-center ps-4">
+              Some Text
+            </div>
           </div>
           <div className="col">
-            <div className="chevron-mid"></div>
+            <div className="chevron-mid d-flex justify-content-center align-items-center text-center ps-4">
+              Some Text
+            </div>
           </div>
           <div className="col">
-            <div className="chevron-end"></div>
+            <div className="chevron-end d-flex justify-content-center align-items-center text-center ps-4">
+              Some Text
+            </div>
           </div>
         </div>
       </div>

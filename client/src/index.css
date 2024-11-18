@@ -376,7 +376,7 @@ p {
 /* Plan of Action Section */
 /* HTML: <div class="chevron"></div> */
 .chevron-start {
-  --s: 250px; /* control the shape (can be percentage) */
+  --s: 80%; /* control the shape (can be percentage) */
 
   height: 220px;
   width: 100%; /* Increased width */
@@ -389,10 +389,20 @@ p {
     0 100%,
     calc(0% - var(--s)) 50%
   );
-  background: var(--button-bg-hover);
+  background: var(--color-secondary);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    /* Inner shadow for depth */ inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    /* Highlight effect */ 2px 2px 6px rgba(0, 0, 0, 0.2); /* Outer shadow for floating effect */
+    transition: all 0.3s ease;
+}
+.chevron-start:hover {
+  background: var(--color-text-on-primary);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    4px 4px 12px rgba(0, 0, 0, 0.3); /* Stronger outer shadow on hover */
 }
 .chevron-mid {
-  --s: 250px; /* control the shape (can be percentage) */
+  --s: 80%; /* control the shape (can be percentage) */
 
   height: 220px;
   width: 100%; /* Increased width */
@@ -408,18 +418,19 @@ p {
   background: var(--button-bg-hover);
 }
 .chevron-end {
-  --s: 250px; /* Controls the depth of the cavity */
+  --s: 80%; /* Controls the depth of the cavity */
 
   height: 220px;
   width: 100%; /* Increased width */
   aspect-ratio: 3/5;
   clip-path: polygon(
-    100% 0,
-    /* Start from the top-right corner */ calc(100% - var(--s)) 0,
-    /* Inward curve at the top (left side) */ 0 50%,
-    /* Inward middle (left side) */ calc(100% - var(--s)) 100%,
+    0 0,
+    /* Start from the top-right corner */ var(--s) 0,
+    /* Inward curve at the top (left side) */ 100% 50%,
+    /* Inward middle (left side) */ var(--s) 100%,
     /* Inward curve at the bottom (left side) */ 100% 100%,
-    /* Bottom-right corner */ 100% 0 /* Top-right corner */
+    0 100%,
+    /* Bottom-right corner */ calc(100% - var(--s)) 50% /* Top-right corner */
   );
   background: var(--button-bg-hover);
 }
