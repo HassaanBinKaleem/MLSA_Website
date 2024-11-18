@@ -1,7 +1,8 @@
 import React from "react";
-import LargeCarousel from "./eventcarousel/LargeCarousel";
-import MediumCarousel from "./eventcarousel/MediumCarousel";
-import SmallCarousel from "./eventcarousel/SmallCarousel";
+// import LargeCarousel from "./eventcarousel/scrapped/LargeCarousel";
+// import MediumCarousel from "./eventcarousel/scrapped/MediumCarousel";
+// import SmallCarousel from "./eventcarousel/scrapped/SmallCarousel";
+import Carousel from "./eventcarousel/EventsCarousel";
 
 const Events = () => {
   return (
@@ -12,7 +13,9 @@ const Events = () => {
     >
       <h1 className="main-header-text mb-4">Events</h1>
       <div className="events-carousel">
-        <div id="LargeCarousel">
+        <Carousel />
+        {/* Scrapped Code */}
+        {/* <div id="LargeCarousel">
           <LargeCarousel />
         </div>
         <div id="MediumCarousel">
@@ -20,7 +23,7 @@ const Events = () => {
         </div>
         <div id="SmallCarousel">
           <SmallCarousel />
-        </div>
+        </div> */}
       </div>
     </section>
   );
