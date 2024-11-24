@@ -11,24 +11,24 @@ const Plan = () => {
           knowledge by seminars,workshops,competitions and many more.
         </p>
         <div className="row">
-          <div className="col">
-            <div className="chevron-start d-flex justify-content-center align-items-center text-center pe-4">
-              Some Text
+          <div className="col-sm">
+            <div className="chevron chevron-start d-flex justify-content-center align-items-center text-center pe-4">
+              Online Events
             </div>
           </div>
-          <div className="col">
-            <div className="chevron-mid d-flex justify-content-center align-items-center text-center ps-4">
-              Some Text
+          <div className="col-sm">
+            <div className="chevron chevron-second d-flex justify-content-center align-items-center text-center ps-4">
+              Competitions & Hackathons
             </div>
           </div>
-          <div className="col">
-            <div className="chevron-mid d-flex justify-content-center align-items-center text-center ps-4">
-              Some Text
+          <div className="col-sm">
+            <div className="chevron chevron-second chevron-third d-flex justify-content-center align-items-center text-center ps-4">
+              Physical Events
             </div>
           </div>
-          <div className="col">
-            <div className="chevron-end d-flex justify-content-center align-items-center text-center ps-4">
-              Some Text
+          <div className="col-sm">
+            <div className="chevron chevron-end d-flex justify-content-center align-items-center text-center ps-4">
+              Seminars & Workshops
             </div>
           </div>
         </div>

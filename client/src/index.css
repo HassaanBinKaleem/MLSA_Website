@@ -375,12 +375,22 @@ p {
 
 /* Plan of Action Section */
 /* HTML: <div class="chevron"></div> */
-.chevron-start {
-  --s: 80%; /* control the shape (can be percentage) */
-
+.chevron {
+  --s: 85%; /* Controls the depth of the cavity */
   height: 220px;
-  width: 100%; /* Increased width */
-  aspect-ratio: 3/5;
+  width: 115%; /* Increased width */
+  font-family: var(--font-body) !important;
+  font-size: 1.7rem !important;
+  font-weight: 900;
+  box-shadow: 8px 20px 8px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-size: auto 100% !important;
+  background-position: calc(-50px) center !important;
+}
+.chevron-start {
+  aspect-ratio: 3 / 5;
   clip-path: polygon(
     0 0,
     var(--s) 0,
@@ -390,22 +400,21 @@ p {
     calc(0% - var(--s)) 50%
   );
   background: var(--color-secondary);
-  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
-    /* Inner shadow for depth */ inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-    /* Highlight effect */ 2px 2px 6px rgba(0, 0, 0, 0.2); /* Outer shadow for floating effect */
-    transition: all 0.3s ease;
 }
 .chevron-start:hover {
-  background: var(--color-text-on-primary);
-  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
-    inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-    4px 4px 12px rgba(0, 0, 0, 0.3); /* Stronger outer shadow on hover */
+  background-image: url(/src/assets/icons/router-fill.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 140% !important;
+  background-position: calc(-50px) calc(0px) !important;
 }
-.chevron-mid {
-  --s: 80%; /* control the shape (can be percentage) */
-
-  height: 220px;
-  width: 100%; /* Increased width */
+.chevron:hover {
+  transform: translateY(-5px);
+  background: var(--button-bg-primary);
+  color: var(--button-text-primary);
+  border-top: 2px solid var(--button-bg-hover);
+  box-shadow: 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.chevron-second {
   aspect-ratio: 3/5;
   clip-path: polygon(
     0 0,
@@ -415,13 +424,24 @@ p {
     0 100%,
     calc(100% - var(--s)) 50%
   );
-  background: var(--button-bg-hover);
+  background: #00ff9c;
+}
+.chevron-second:hover {
+  background-image: url(/src/assets/icons/code-slash.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 140% !important;
+  background-position: calc(-50px) center !important;
+}
+.chevron-third {
+  background: #ff4242;
+}
+.chevron-third:hover {
+  background-image: url(/src/assets/icons/people-fill.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 140% !important;
+  background-position: calc(-50px) center !important;
 }
 .chevron-end {
-  --s: 80%; /* Controls the depth of the cavity */
-
-  height: 220px;
-  width: 100%; /* Increased width */
   aspect-ratio: 3/5;
   clip-path: polygon(
     0 0,
@@ -432,9 +452,14 @@ p {
     0 100%,
     /* Bottom-right corner */ calc(100% - var(--s)) 50% /* Top-right corner */
   );
-  background: var(--button-bg-hover);
+  background: #ffec42;
 }
-
+.chevron-end:hover{
+  background-image: url(/src/assets/icons/shop-window.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 140% !important;
+  background-position: calc(-50px) center !important;
+}
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
   .navbar-collapse {
