@@ -4,8 +4,11 @@ const Plan = () => {
   return (
     <section id="plan" className="text-center section-spacing">
       <div className="container px-4">
-        <p className="subtitle-text">How It Works</p>
-        <h1 className="main-header-text mb-4">Plan of Action</h1>
+        <p className="subtitle-text mb-0">How It Works</p>
+        <h1 className="main-header-text mb-4">
+          Plan of Action
+          <i className="bi bi-diagram-3-fill fs-2 header-icon"></i>
+        </h1>
         <p className="slogan-text px-lg-5 mx-auto">
           Our plan of action to improved students confidence and spread
           knowledge by seminars,workshops,competitions and many more.
