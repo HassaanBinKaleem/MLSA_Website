@@ -37,8 +37,11 @@ body {
   margin-bottom: 2rem;
   background: radial-gradient(
     circle,
-    rgba(255, 149, 0, 1) 0%,
-    rgba(0, 123, 255, 1) 35%,
+    rgba(0, 123, 255, 1) 0%,
+    rgba(134, 107, 68, 1) 15%,
+    rgba(255, 168, 45, 1) 34%,
+    rgba(255, 149, 0, 1) 55%,
+    rgba(0, 123, 255, 1) 85%,
     rgba(0, 123, 255, 1) 100%
   );
   overflow: hidden;
@@ -64,10 +67,14 @@ h6 {
 p {
   font-family: var(--font-body);
 }
+.header-icon {
+  vertical-align: middle !important;
+  margin: 0rem 1rem !important;
+}
 
 /* Navbar */
 .navbar {
-  background-color: var(--color-primary) !important;
+  background-color: #05214b !important;
 }
 
 .navbar-brand {
@@ -253,7 +260,7 @@ p {
   background-color: transparent !important;
   border: 0px solid transparent !important;
   border-radius: 1rem !important;
-  position: relative; /* Make the overlay align with the card */
+  position: relative;
 }
 
 .img-container {
@@ -275,86 +282,102 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  background-color: rgba(0, 0, 0, 0.6);
   color: var(--color-text-on-primary);
   padding: 1rem 0.5rem 0rem 0.5rem !important;
   text-align: center;
   box-shadow: var(--shadow-primary) !important;
-  transform: translateY(100%); /* Start off-screen */
+  transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
 }
 .card-overlay h2 {
   font-family: var(--font-heading) !important;
   font-size: 2rem !important;
 }
-/* Show overlay and zoom effect on hover */
 .custom-card:hover .card-overlay {
-  transform: translateY(0); /* Slide up into view */
+  transform: translateY(0);
 }
 
 .img-container:hover img {
-  transform: scale(1.1); /* Zoom effect */
+  transform: scale(1.1);
 }
 
 /* About Us Section */
-.subtitle-text {
-  font-family: var(--font-body) !important;
-  color: var(--color-text-on-primary) !important;
-  font-size: 1.2rem !important;
-  padding: 0rem !important;
+#aboutus {
+  padding: 2rem 1rem;
 }
+.subtitle-text,
 .slogan-text {
-  font-family: var(--font-body) !important;
-  color: var(--color-text-on-primary) !important;
-  font-size: 1.2rem !important;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
+/* Card Styling */
 .aboutus-content-card {
-  width: 100% !important;
-  height: 20rem !important;
   cursor: pointer !important;
+  height: auto;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  transition: all 0.3s ease;
   background-color: var(--color-text-on-secondary) !important;
   color: var(--color-text-on-primary) !important;
-  text-align: start !important;
-  transition: all 0.5s ease !important;
 }
 .aboutus-content-card:hover {
   background-color: var(--color-text-on-primary) !important;
   color: var(--color-text-on-secondary) !important;
-  box-shadow: var(--shadow-tertiary) !important;
-  transform: translateY(-10px) !important;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-tertiary);
 }
+
+/* Metric Card Styling */
 .aboutus-metric-card {
   cursor: pointer !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease !important;
   background-color: var(--color-text-on-secondary) !important;
   color: var(--color-text-on-primary) !important;
-  text-align: start !important;
-  transition: all 0.5s ease !important;
+  margin-bottom: 1rem;
 }
 .aboutus-metric-card h1 {
-  font-family: var(--font-heading) !important;
-  font-size: 4rem !important;
-  color: var(--color-secondary) !important;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
-.aboutus-metric-card .icon {
-  text-align: end !important;
+.aboutus-metric-card h1,
+.aboutus-metric-card i {
   color: var(--color-secondary) !important;
-  font-size: 1rem !important;
-  transition: all 0.5s ease !important;
-}
-.aboutus-metric-card span {
-  font-family: var(--font-body) !important;
-  font-size: 1.2rem !important;
 }
 .aboutus-metric-card:hover {
   background-color: var(--color-text-on-primary) !important;
   color: var(--color-text-on-secondary) !important;
-  box-shadow: var(--shadow-tertiary) !important;
-  transform: translateY(-10px) !important;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-tertiary);
 }
-.aboutus-metric-card:hover .icon {
-  color: var(--color-text-on-secondary) !important;
+.aboutus-metric-card span {
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
-
+.aboutus-metric-card .icon {
+  align-self: flex-end;
+  text-align: end !important;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .aboutus-content-card,
+  .aboutus-metric-card {
+    padding: 1rem;
+  }
+  .aboutus-content-card p,
+  .aboutus-metric-card span {
+    font-size: 0.9rem;
+  }
+}
 /* Team Section */
 .team-content-card {
   cursor: pointer !important;
@@ -363,22 +386,51 @@ p {
   text-align: start !important;
   transition: all 0.5s ease !important;
 }
+
 .team-content-card:hover {
   background-color: var(--color-text-on-primary) !important;
   color: var(--color-text-on-secondary) !important;
   box-shadow: var(--shadow-tertiary) !important;
   transform: translateY(-10px) !important;
 }
+
 .team-content-card:hover h1 {
   color: var(--color-secondary) !important;
 }
+#team .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.member-img-container {
+  flex: 1;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.member-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+.member-img-container img:hover {
+  transform: scale(1.1);
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .member-img-container {
+    display: none;
+  }
+}
 /* Plan of Action Section */
-/* HTML: <div class="chevron"></div> */
 .chevron {
-  --s: 85%; /* Controls the depth of the cavity */
+  --s: 85%;
   height: 220px;
-  width: 115%; /* Increased width */
+  width: 115%;
   font-family: var(--font-body) !important;
   font-size: 1.7rem !important;
   font-weight: 900;
@@ -445,16 +497,16 @@ p {
   aspect-ratio: 3/5;
   clip-path: polygon(
     0 0,
-    /* Start from the top-right corner */ var(--s) 0,
-    /* Inward curve at the top (left side) */ 100% 50%,
-    /* Inward middle (left side) */ var(--s) 100%,
-    /* Inward curve at the bottom (left side) */ 100% 100%,
+    var(--s) 0,
+    100% 50%,
+    var(--s) 100%,
+    100% 100%,
     0 100%,
-    /* Bottom-right corner */ calc(100% - var(--s)) 50% /* Top-right corner */
+    calc(100% - var(--s)) 50%
   );
   background: #ffec42;
 }
-.chevron-end:hover{
+.chevron-end:hover {
   background-image: url(/src/assets/icons/shop-window.svg) !important;
   background-repeat: no-repeat !important;
   background-size: auto 140% !important;
@@ -462,6 +514,9 @@ p {
 }
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
+  .navbar {
+    background-color: #08377e !important;
+  }
   .navbar-collapse {
     padding-top: 1.2rem !important;
     max-height: 70vh;
