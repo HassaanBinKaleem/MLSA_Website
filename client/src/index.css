@@ -346,7 +346,7 @@ p {
   margin-bottom: 1rem;
 }
 .aboutus-metric-card h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(3rem, 6vw, 5rem);
 }
 .aboutus-metric-card h1,
 .aboutus-metric-card i {
@@ -511,6 +511,77 @@ p {
   background-repeat: no-repeat !important;
   background-size: auto 140% !important;
   background-position: calc(-50px) center !important;
+}
+
+/* Benefits Section */
+.benefits-carousel {
+  border-radius: 1rem !important;
+}
+#MediumCarousel,
+#SmallCarousel {
+  display: none;
+}
+.benefits-card {
+  height: 300px !important;
+  cursor: pointer !important;
+}
+.benefits-card,
+.benefits-card-medium,
+.benefits-card-small {
+  height: 300px !important;
+  border-radius: 1.5rem !important;
+  padding: 0.5rem !important;
+  text-align: start !important;
+  color: var(--color-text-on-primary) !important;
+  background-color: var(--button-text-hover) !important;
+  transition: all 0.3s ease !important;
+}
+.benefits-card .bi,
+.benefits-card-medium .bi,
+.benefits-card-small .bi {
+  font-size: 5rem !important;
+  margin-left: 0.5rem !important;
+  color: var(--color-secondary) !important;
+}
+.benefits-card h1 {
+  margin-bottom: 1rem !important;
+}
+.benefits-card p,
+.benefits-card-medium p,
+.benefits-card-small p {
+  font-style: italic !important;
+}
+.benefits-card:hover,
+.benefits-card-medium:hover,
+.benefits-card-small:hover {
+  background-color: var(--color-text-on-primary) !important;
+  color: var(--color-text-on-secondary) !important;
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-tertiary);
+}
+
+@media (max-width: 1200px) {
+  #LargeCarousel {
+    display: none;
+  }
+  #MediumCarousel {
+    display: block;
+  }
+  #SmallCarousel {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #LargeCarousel {
+    display: none;
+  }
+  #MediumCarousel {
+    display: none;
+  }
+  #SmallCarousel {
+    display: block;
+  }
 }
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {

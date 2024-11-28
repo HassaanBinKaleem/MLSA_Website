@@ -5,6 +5,7 @@ import AboutUs from "./sections/AboutUs";
 import Team from "./sections/Team";
 import Plan from "./sections/Plan";
 import Benefits from "./sections/Benefits";
+import FAQs from "./sections/FAQs";
 
 const ContentSection = () => {
   return (
@@ -13,8 +14,9 @@ const ContentSection = () => {
       <Events />
       <AboutUs />
       <Team />
-      <Plan />
+      {/* <Plan /> */}
       <Benefits />
+      <FAQs />
     </div>
   );
 };

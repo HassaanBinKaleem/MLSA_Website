@@ -13,16 +13,6 @@ const Events = () => {
       </h1>
       <div className="events-carousel">
         <Carousel />
-        {/* Scrapped Code */}
-        {/* <div id="LargeCarousel">
-          <LargeCarousel />
-        </div>
-        <div id="MediumCarousel">
-          <MediumCarousel />
-        </div>
-        <div id="SmallCarousel">
-          <SmallCarousel />
-        </div> */}
       </div>
     </section>
   );
