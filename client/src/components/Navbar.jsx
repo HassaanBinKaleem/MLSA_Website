@@ -10,8 +10,8 @@ const CustomNavbar = () => {
           <img
             src="src/assets/logo.jpeg"
             alt="Logo"
-            width="70"
-            height="70"
+            width="60"
+            height="60"
             className="d-inline-block align-text-top"
           />
         </Navbar.Brand>
