@@ -247,7 +247,8 @@ p {
   padding: 0rem 0rem !important;
 }
 .section-spacing {
-  padding: 5rem 0rem !important;
+  padding-top: 7rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .custom-card {
@@ -560,6 +561,23 @@ p {
   box-shadow: var(--shadow-tertiary);
 }
 
+/* FAQs Section */
+.custom-accordion .accordion-button {
+  background-color: var(--color-text-on-secondary) !important;
+  color: var(--button-text-primary) !important;
+  border: none !important;
+}
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--color-text-on-secondary) !important;
+  color: var(--color-text-on-primary) !important;
+}
+.custom-accordion-body {
+  background-color: var(--color-text-on-secondary) !important;
+  color: rgb(177, 177, 177) !important;
+  text-align: start !important;
+  font-style: italic !important;
+  margin-bottom: 0rem !important;
+}
 @media (max-width: 1200px) {
   #LargeCarousel {
     display: none;
@@ -585,6 +603,10 @@ p {
 }
 /* Small and Medium Screens Only*/
 @media (max-width: 992px) {
+  .section-spacing {
+    padding-top: 10rem !important;
+    margin-bottom: 1rem !important;
+  }
   .navbar {
     background-color: #08377e !important;
   }
