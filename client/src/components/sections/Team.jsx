@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const Team = () => {
-  const [imageSrc, setImageSrc] = useState("src/assets/team/a.png");
+  const [imageSrc, setImageSrc] = useState("src/assets/team/main-lead.png");
   const handleMouseEnter = (imgSrc) => {
     setImageSrc(imgSrc);
   };
   const handleMouseLeave = () => {
-    setImageSrc("src/assets/team/a.png");
+    setImageSrc("src/assets/team/main-lead.png");
   };
 
   return (
@@ -27,7 +27,7 @@ const Team = () => {
               <div className="col">
                 <div
                   className="card team-content-card mb-3 p-3 text-start"
-                  onMouseEnter={() => handleMouseEnter("src/assets/team/a.png")}
+                  onMouseEnter={() => handleMouseEnter("src/assets/team/main-lead.png")}
                   onMouseLeave={handleMouseLeave}
                 >
                   <h1 className="card-title">Abdul Rehman</h1>
@@ -35,7 +35,7 @@ const Team = () => {
                 </div>
                 <div
                   className="card team-content-card my-3 p-3 text-start"
-                  onMouseEnter={() => handleMouseEnter("src/assets/team/b.png")}
+                  onMouseEnter={() => handleMouseEnter("src/assets/team/male-lead.jpg")}
                   onMouseLeave={handleMouseLeave}
                 >
                   <h1 className="card-title">Talal Jilani</h1>
@@ -43,15 +43,15 @@ const Team = () => {
                 </div>
                 <div
                   className="card team-content-card my-3 p-3 text-start"
-                  onMouseEnter={() => handleMouseEnter("src/assets/team/c.png")}
+                  onMouseEnter={() => handleMouseEnter("src/assets/team/web-dev-lead.jpg")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <h1 className="card-title">Hassan Kaleem</h1>
+                  <h1 className="card-title">Hassaan Bin Kaleem</h1>
                   <p>Web Dev Lead</p>
                 </div>
                 <div
                   className="card team-content-card my-3 p-3 text-start"
-                  onMouseEnter={() => handleMouseEnter("src/assets/team/d.png")}
+                  onMouseEnter={() => handleMouseEnter("src/assets/team/graphic-lead.jpg")}
                   onMouseLeave={handleMouseLeave}
                 >
                   <h1 className="card-title">Umar Abdullah</h1>
@@ -59,7 +59,7 @@ const Team = () => {
                 </div>
                 <div
                   className="card team-content-card mt-3 p-3 text-start"
-                  onMouseEnter={() => handleMouseEnter("src/assets/team/e.png")}
+                  onMouseEnter={() => handleMouseEnter("src/assets/team/media-lead.png")}
                   onMouseLeave={handleMouseLeave}
                 >
                   <h1 className="card-title">Anees Haider</h1>

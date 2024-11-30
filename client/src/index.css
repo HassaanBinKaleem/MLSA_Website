@@ -624,3 +624,8 @@ p {
     font-size: 2rem !important;
   }
 }
+
+.footer{
+  background-color: #05214b !important;
+  color: white;
+}
