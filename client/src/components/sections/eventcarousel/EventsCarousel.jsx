@@ -1,5 +1,5 @@
-import React from "react";
 import { Carousel, Container, Row, Col, Card } from "react-bootstrap";
+import Meetup1 from "../../../assets/events/meetup/1.png"
 const EventsCarousel = () => {
   return (
     <Carousel id="carousel" interval={5000} indicators={false} controls>
@@ -31,7 +31,7 @@ const EventsCarousel = () => {
               <Card className="custom-card">
                 <div className="img-container">
                   <Card.Img
-                    src="src/assets/events/meetup/1.png"
+                    src={Meetup1}
                     alt="Event01"
                   />
                   <div className="card-overlay">
