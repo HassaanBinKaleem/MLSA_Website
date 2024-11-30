@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MainLead from "../../assets/team/main-lead.png"
 import MaleLead from "../../assets/team/male-lead.jpg"
 import WebDevLead from "../../assets/team/web-dev-lead.jpg"

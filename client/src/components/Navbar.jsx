@@ -1,6 +1,6 @@
-import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import Logo from "../assets/logo.jpeg"
 
 const CustomNavbar = () => {
   return (
@@ -8,7 +8,7 @@ const CustomNavbar = () => {
       <Container fluid>
         <Navbar.Brand href="#" className="me-3">
           <img
-            src="src/assets/logo.jpeg"
+            src={Logo}
             alt="Logo"
             width="60"
             height="60"
