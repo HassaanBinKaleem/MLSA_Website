@@ -607,9 +607,6 @@ p {
     padding-top: 10rem !important;
     margin-bottom: 1rem !important;
   }
-  .navbar {
-    background-color: #08377e !important;
-  }
   .navbar-collapse {
     padding-top: 1.2rem !important;
     max-height: 70vh;
@@ -622,6 +619,9 @@ p {
   }
   .main-header-text {
     font-size: 2rem !important;
+  }
+  .btn-hero {
+    font-size: 1.2rem !important;
   }
 }
 
